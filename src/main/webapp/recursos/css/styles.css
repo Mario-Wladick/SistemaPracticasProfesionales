@@ -1,0 +1,286 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 21 may. 2025, 2:58:16 p. m.
+    Author     : LENOVO
+*/
+/* Reset básico */
+/* Variables de colores azules */
+:root {
+    --primary-blue: #1e3a8a;
+    --secondary-blue: #3b82f6;
+    --light-blue: #60a5fa;
+    --dark-blue: #1e40af;
+    --accent-blue: #2563eb;
+    --sky-blue: #0ea5e9;
+    --navy-blue: #1e293b;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar personalizada */
+.bg-primary {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%) !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--sky-blue) 100%);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Sección de estadísticas */
+.stats-section {
+    background: #f8fafc;
+}
+
+.stats-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(30, 58, 138, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.stats-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(30, 58, 138, 0.15);
+}
+
+.stats-icon {
+    color: var(--secondary-blue);
+    margin-bottom: 1rem;
+}
+
+.stats-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+    margin: 0.5rem 0;
+}
+
+.stats-label {
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* Sección de servicios */
+.services-section {
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+}
+
+.service-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 15px 35px rgba(30, 58, 138, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(30, 58, 138, 0.15);
+}
+
+.service-icon {
+    color: var(--accent-blue);
+    margin-bottom: 1.5rem;
+}
+
+.service-title {
+    color: var(--primary-blue);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.service-description {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+/* Sección de registro */
+.registration-section {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 50%, var(--secondary-blue) 100%);
+}
+
+.registration-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.registration-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header-custom {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-header-custom-alt {
+    background: linear-gradient(135deg, var(--sky-blue), var(--accent-blue));
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.benefits-list li {
+    padding: 0.5rem 0;
+    color: #64748b;
+}
+
+.benefits-list .fas.fa-check {
+    color: var(--secondary-blue);
+    margin-right: 0.75rem;
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--dark-blue), var(--primary-blue));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(30, 58, 138, 0.3);
+}
+
+.btn-info {
+    background: linear-gradient(135deg, var(--sky-blue), var(--accent-blue));
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-info:hover {
+    background: linear-gradient(135deg, var(--accent-blue), var(--primary-blue));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.btn-outline-light {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: white;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Títulos de sección */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer-section {
+    background: var(--navy-blue);
+    color: white;
+    padding: 2rem 0;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stats-card, .service-card, .registration-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh;
+        text-align: center;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .stats-number {
+        font-size: 2.5rem;
+    }
+    
+    .service-card {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Efectos adicionales */
+.navbar {
+    box-shadow: 0 2px 20px rgba(30, 58, 138, 0.1);
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(135deg, var(--light-blue), var(--secondary-blue));
+    color: white;
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
